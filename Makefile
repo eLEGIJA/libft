@@ -42,6 +42,7 @@ $(NAME): $(SRC_OBJECTS)
 %.o: %.c $(HEADERS)
 	@gcc $(FLAGS) -c $< -o $@
 	@echo "$@ added"
+	
 clean:
 	@/bin/rm -rf $(SRC_OBJECTS) $(BNS_OBJECTS)
 	@echo "All objects removed"
